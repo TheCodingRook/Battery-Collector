@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "BatteryCollector (Debug)",
+			"request": "launch",
+			"preLaunchTask": "BatteryCollector Mac Debug Build",
+			"program": "/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/Binaries/Mac/UE4-Mac-Debug.app/Contents/MacOS/UE4-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/vaggelis/Epic Games/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "BatteryCollector (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "BatteryCollector Mac DebugGame Build",
+			"program": "/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/Binaries/Mac/UE4-Mac-DebugGame.app/Contents/MacOS/UE4-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/vaggelis/Epic Games/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "BatteryCollector (Development)",
+			"request": "launch",
+			"preLaunchTask": "BatteryCollector Mac Development Build",
+			"program": "/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/Binaries/Mac/UE4.app/Contents/MacOS/UE4",
+			"args": [
+			],
+			"cwd": "/Users/vaggelis/Epic Games/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "BatteryCollector (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "BatteryCollector Mac Shipping Build",
+			"program": "/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/Binaries/Mac/UE4-Mac-Shipping.app/Contents/MacOS/UE4-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/vaggelis/Epic Games/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "BatteryCollector (Test)",
+			"request": "launch",
+			"preLaunchTask": "BatteryCollector Mac Test Build",
+			"program": "/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/Binaries/Mac/UE4-Mac-Test.app/Contents/MacOS/UE4-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/vaggelis/Epic Games/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "BatteryCollectorEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "BatteryCollectorEditor Mac Debug Build",
+			"program": "/Users/vaggelis/Epic Games/UE_4.23/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject"
+			],
+			"cwd": "/Users/vaggelis/Epic Games/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "BatteryCollectorEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "BatteryCollectorEditor Mac DebugGame Build",
+			"program": "/Users/vaggelis/Epic Games/UE_4.23/Engine/Binaries/Mac/UE4Editor-Mac-DebugGame.app/Contents/MacOS/UE4Editor-Mac-DebugGame",
+			"args": [
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject"
+			],
+			"cwd": "/Users/vaggelis/Epic Games/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "BatteryCollectorEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "BatteryCollectorEditor Mac Development Build",
+			"program": "/Users/vaggelis/Epic Games/UE_4.23/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject"
+			],
+			"cwd": "/Users/vaggelis/Epic Games/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Users/vaggelis/Epic Games/UE_4.23/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+		}
+	]
+}

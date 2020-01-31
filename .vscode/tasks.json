@@ -1,0 +1,995 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "BatteryCollector Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"Debug",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"Debug",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"Debug",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"DebugGame",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"DebugGame",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"DebugGame",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"Development",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"Development",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"Development",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"Shipping",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"Shipping",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"Shipping",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"Test",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"Test",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"Mac",
+				"Test",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"Debug",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"Debug",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"Debug",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"DebugGame",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"DebugGame",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"DebugGame",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"Development",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"Development",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"Development",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"Shipping",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"Shipping",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"Shipping",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"Test",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"Test",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"IOS",
+				"Test",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"Debug",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"Debug",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"Debug",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"DebugGame",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"DebugGame",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"DebugGame",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"Development",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"Development",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"Development",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"Shipping",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"Shipping",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"Shipping",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"Test",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"Test",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollector HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollector HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollector",
+				"HTML5",
+				"Test",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollectorEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollectorEditor",
+				"Mac",
+				"Debug",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollectorEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollectorEditor",
+				"Mac",
+				"Debug",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollectorEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollectorEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollectorEditor",
+				"Mac",
+				"Debug",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollectorEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollectorEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollectorEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollectorEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollectorEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollectorEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollectorEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollectorEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollectorEditor",
+				"Mac",
+				"Development",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollectorEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollectorEditor",
+				"Mac",
+				"Development",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BatteryCollectorEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		},
+		{
+			"label": "BatteryCollectorEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BatteryCollectorEditor",
+				"Mac",
+				"Development",
+				"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/BatteryCollector.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vaggelis/Epic Games/UE_4.23"
+			}
+		}
+	]
+}

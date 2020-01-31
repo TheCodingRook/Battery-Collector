@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/.vscode": true,
+		"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/Content": true,
+		"/Users/vaggelis/Documents/Unreal Projects/BatteryCollector/Intermediate": true
+	}
+}
